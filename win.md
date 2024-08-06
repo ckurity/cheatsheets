@@ -2,6 +2,9 @@
   - [query](#query)
   - [add](#add)
   - [delete](#delete)
+- [Reboot/Shutdown](#rebootshutdown)
+- [Invoke-WebRequest](#invoke-webrequest)
+- [Configure IP Address](#configure-ip-address)
 
 
 # reg
@@ -26,6 +29,7 @@ reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winl
 reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultPassword /f
 ```
 
+# Reboot/Shutdown
 ```sh
 shutdown -t -f 0 -r
 ```
@@ -34,11 +38,13 @@ shutdown -t -f 0 -r
 shutdown -t -f 0 -s
 ```
 
+# Invoke-WebRequest
 ```sh
 iwr http://10.1.1.10/lab.zip -O lab.zip
 iwr http://10.1.1.10:8000/lab.zip -O lab.zip
 ```
 
+# Configure IP Address
 ```sh
 netsh i i sh a "Ethernet"
 netsh i i se a "Ethernet" s 10.1.1.1 255.255.255.0
