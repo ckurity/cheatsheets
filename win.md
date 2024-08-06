@@ -18,3 +18,8 @@ shutdown -t -f 0 -r
 ```sh
 shutdown -t -f 0 -s
 ```
+
+```sh
+iwr http://10.1.1.10/lab.zip -O lab.zip
+iwr http://10.1.1.10:8000/lab.zip -O lab.zip
+```
