@@ -9,5 +9,5 @@ sudo apt install -y xclip xxd docker.io keepassxc ncat sshpass gron jq tldr ming
 
 # Ubuntu
 ```sh
-sudo apt install -y xclip docker.io keepassxc ncat
+sudo apt install -y xclip curl keepassxc ncat docker.io
 ```
