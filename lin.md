@@ -1,5 +1,6 @@
 - [Kali](#kali)
 - [Ubuntu](#ubuntu)
+- [Git](#git)
 
 
 # Kali
@@ -9,7 +10,7 @@ sudo apt install -y xclip xxd docker.io keepassxc ncat sshpass gron jq tldr ming
 
 # Ubuntu
 ```sh
-sudo apt install -y xclip curl keepassxc ncat docker.io
+sudo apt install -y curl docker.io keepassxc ncat nmap tmux xclip
 ```
 
 # Git
