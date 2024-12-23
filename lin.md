@@ -10,7 +10,7 @@ sudo apt install -y xclip xxd docker.io keepassxc ncat sshpass gron jq tldr ming
 
 # Ubuntu
 ```sh
-sudo apt install -y curl docker.io keepassxc ncat nmap tmux xclip
+sudo apt install -y curl docker.io keepassxc ncat nmap tmux whois xclip
 ```
 
 # Git
