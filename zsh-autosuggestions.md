@@ -14,9 +14,11 @@
 
 ## Install ZSH
 ```sh
+nl /etc/shells
+
 sudo apt update
-sudo apt install zsh
-chsh -s $(which zsh)
+sudo apt install zsh -y
+sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -61,6 +63,12 @@ After installation, restart your terminal. Zsh with Oh My Zsh provides command c
 2. Locate the plugins line and add zsh-autosuggestions to the list. It should look something like this:
 ```sh
 plugins=(git zsh-autosuggestions)
+```
+
+
+```sh
+ls -lh ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
 ## Install zsh-autosuggestions Manually
