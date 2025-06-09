@@ -47,8 +47,9 @@ iwr http://10.1.1.10:8000/lab.zip -O lab.zip
 
 # 4. Configure IP Address
 ```sh
-netsh i i sh a "Ethernet"
-netsh i i se a "Ethernet" s 10.1.1.1/24
+netsh i i sh con Ethernet
+netsh i i sh a Ethernet
+netsh i i se a Ethernet s 10.1.1.1/24
 ```
 
 # 5. Chocolatey
